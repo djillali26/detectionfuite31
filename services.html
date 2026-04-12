@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Découvrez toutes nos solutions de détection de fuites à Toulouse : gaz traceur, caméra thermique, détection acoustique, canalisation enterrée, plancher chauffant, piscine. Recherche de Fuite 31.">
-  <meta name="keywords" content="gaz traceur Toulouse, caméra thermique fuite, détection acoustique, canalisation enterrée, plancher chauffant fuite, fuite piscine Toulouse, détection fuite 31">
+  <meta name="description" content="Recherche de Fuite 31 - Dégât des eaux, moisissures, surconsommation, fuite chauffage, piscine, infiltration toiture. Expert détection fuites Toulouse 31. Intervention rapide 7j/7.">
+  <meta name="keywords" content="dégât des eaux Toulouse, fuite cachée Toulouse, moisissures humidité 31, surconsommation eau Toulouse, fuite plancher chauffant, fuite piscine Toulouse, infiltration toiture Toulouse, détection fuite 31">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://detectionfuite31.fr/services.html">
-  <meta property="og:title" content="Nos Solutions de Détection - Recherche de Fuite 31 Toulouse">
-  <meta property="og:description" content="Gaz traceur, caméra thermique, détection acoustique : toutes nos technologies non destructives pour localiser votre fuite à Toulouse.">
+  <meta property="og:title" content="Nos Solutions - Recherche de Fuite 31 | Expert Fuites Toulouse">
+  <meta property="og:description" content="Dégât des eaux, moisissures, surconsommation, fuite chauffage ou piscine — on localise le problème, on stoppe les dégâts. Intervention non destructive à Toulouse et Haute-Garonne.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://detectionfuite31.fr/services.html">
   <meta property="og:locale" content="fr_FR">
-  <title>Nos Solutions de Détection de Fuites | Recherche de Fuite 31 - Toulouse</title>
+  <title>Nos Solutions | Recherche de Fuite 31 - Détection Fuites Toulouse</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💧</text></svg>">
   <link rel="stylesheet" href="css/style.css">
 
@@ -26,245 +26,357 @@
     "email": "detectionfuite31@gmail.com",
     "address": { "@type": "PostalAddress", "addressLocality": "Toulouse", "postalCode": "31000", "addressCountry": "FR" },
     "geo": { "@type": "GeoCoordinates", "latitude": 43.6047, "longitude": 1.4442 },
-    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "327" }
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "327" },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:00", "closes": "20:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "18:00" }
+    ]
   }
   </script>
 
   <style>
-    /* ===== PAGE-SPECIFIC STYLES ===== */
-    .service-detail {
-      padding: 80px 0;
-    }
-    .service-detail:nth-child(even) {
-      background: var(--gray-bg);
-    }
-    .service-detail:nth-child(odd) {
-      background: var(--white);
-    }
+    /* ===== SERVICES PAGE SPECIFIC STYLES ===== */
 
-    .service-detail-inner {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 70px;
-      align-items: center;
-    }
-    .service-detail-inner.reverse {
-      direction: rtl;
-    }
-    .service-detail-inner.reverse > * {
-      direction: ltr;
-    }
-
-    .service-detail-visual {
+    /* Page Hero */
+    .services-hero {
+      background: linear-gradient(135deg, #2007BC 0%, #0A0060 50%, #00FAB4 100%);
+      padding: 140px 0 80px;
+      text-align: center;
       position: relative;
-      border-radius: var(--radius);
       overflow: hidden;
-      box-shadow: var(--shadow-lg);
-      background: var(--gradient);
-      min-height: 380px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 40px;
-      text-align: center;
     }
-    .service-detail-visual .service-big-icon {
-      width: 100px;
-      height: 100px;
-      background: rgba(255,255,255,0.15);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 24px;
-      border: 2px solid rgba(255,255,255,0.3);
+    .services-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2300FAB4' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      opacity: 0.5;
     }
-    .service-detail-visual .service-big-icon svg {
-      width: 52px;
-      height: 52px;
-      color: var(--white);
-    }
-    .service-detail-visual .visual-badge {
+    .services-hero .container { position: relative; z-index: 1; }
+    .services-hero-label {
       display: inline-block;
-      background: var(--green);
-      color: var(--blue);
-      font-family: var(--font-body);
-      font-weight: 800;
-      font-size: 12px;
+      background: rgba(0,250,180,0.15);
+      border: 1px solid rgba(0,250,180,0.35);
+      color: #00FAB4;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
-      letter-spacing: 0.06em;
-      padding: 6px 20px;
-      border-radius: var(--pill);
-      margin-bottom: 16px;
+      padding: 6px 18px;
+      border-radius: 50px;
+      margin-bottom: 20px;
     }
-    .service-detail-visual .visual-title {
-      font-family: var(--font-title);
-      font-size: clamp(1.6rem, 3vw, 2.4rem);
+    .services-hero h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
       font-weight: 700;
-      text-transform: uppercase;
-      color: var(--white);
+      color: #fff;
       line-height: 1.1;
-      margin-bottom: 0;
-    }
-
-    .service-detail-content h2 {
       margin-bottom: 20px;
-      font-size: clamp(1.6rem, 3vw, 2.2rem);
-    }
-    .service-detail-content .service-anchor-label {
-      display: inline-block;
-      background: var(--green);
-      color: var(--blue);
-      font-family: var(--font-body);
-      font-weight: 800;
-      font-size: 12px;
       text-transform: uppercase;
-      letter-spacing: 0.06em;
-      padding: 5px 18px;
-      border-radius: var(--pill);
-      margin-bottom: 16px;
+      letter-spacing: 0.02em;
     }
-    .service-detail-content p {
-      color: var(--gray);
-      font-size: 1rem;
-      line-height: 1.8;
-      margin-bottom: 20px;
-    }
-
-    .benefits-list {
-      list-style: none;
-      margin: 0 0 32px;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    .benefits-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-      color: var(--gray);
-      font-size: 0.95rem;
-      line-height: 1.5;
-    }
-    .benefits-list li .benefit-icon {
-      width: 22px;
-      height: 22px;
-      border-radius: 50%;
-      background: var(--green);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      margin-top: 1px;
-    }
-    .benefits-list li .benefit-icon svg {
-      width: 12px;
-      height: 12px;
-      color: var(--blue);
-    }
-
-    /* Quick jump nav */
-    .services-nav {
-      background: var(--white);
-      border-bottom: 1px solid rgba(0,0,0,0.07);
-      position: sticky;
-      top: 80px;
-      z-index: 100;
-    }
-    .services-nav-inner {
-      display: flex;
-      gap: 4px;
-      overflow-x: auto;
-      padding: 12px 0;
-      scrollbar-width: none;
-    }
-    .services-nav-inner::-webkit-scrollbar { display: none; }
-    .services-nav-link {
-      display: flex;
-      align-items: center;
-      gap: 7px;
-      padding: 8px 18px;
-      border-radius: var(--pill);
-      font-family: var(--font-body);
-      font-weight: 700;
-      font-size: 13px;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      color: var(--gray);
-      white-space: nowrap;
-      border: 2px solid transparent;
-      transition: var(--transition);
-    }
-    .services-nav-link:hover,
-    .services-nav-link.active {
-      background: var(--blue);
-      color: var(--white);
-      border-color: var(--blue);
-    }
-    .services-nav-link svg {
-      width: 16px;
-      height: 16px;
-    }
-
-    /* CTA section */
-    .services-cta-section {
-      background: var(--gradient);
-      padding: 90px 0;
-      text-align: center;
-    }
-    .services-cta-section h2 {
-      color: var(--white);
-      font-size: clamp(1.8rem, 4vw, 3rem);
-      margin-bottom: 20px;
-    }
-    .services-cta-section p {
-      color: rgba(255,255,255,0.85);
+    .services-hero h1 span { color: #00FAB4; }
+    .services-hero p {
+      font-family: 'Open Sans', sans-serif;
+      color: rgba(255,255,255,0.82);
       font-size: 1.15rem;
-      max-width: 600px;
-      margin: 0 auto 16px;
+      max-width: 620px;
+      margin: 0 auto 36px;
       line-height: 1.7;
     }
-    .services-cta-phone {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      font-family: var(--font-title);
-      font-size: clamp(1.8rem, 4vw, 2.8rem);
-      font-weight: 700;
-      color: var(--green);
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      margin-bottom: 32px;
-    }
-    .services-cta-phone svg {
-      width: 36px;
-      height: 36px;
-    }
-    .cta-btns {
+    .services-hero-cta {
       display: flex;
       gap: 16px;
       justify-content: center;
       flex-wrap: wrap;
     }
-
-    @media (max-width: 900px) {
-      .service-detail-inner {
-        grid-template-columns: 1fr;
-        gap: 40px;
-      }
-      .service-detail-inner.reverse {
-        direction: ltr;
-      }
-      .service-detail-visual {
-        min-height: 260px;
-      }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #00FAB4, #00D49A);
+      color: #0A0060;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 15px 32px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 20px rgba(0,250,180,0.35);
     }
-    @media (max-width: 640px) {
-      .service-detail {
-        padding: 60px 0;
-      }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,250,180,0.45); }
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: transparent;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 14px 32px;
+      border-radius: 50px;
+      text-decoration: none;
+      border: 2px solid rgba(255,255,255,0.4);
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .btn-outline:hover { border-color: #00FAB4; background: rgba(0,250,180,0.08); }
+
+    /* Quick Nav (anchor links) */
+    .services-nav {
+      background: #fff;
+      border-bottom: 1px solid #e8e8f0;
+      position: sticky;
+      top: 72px;
+      z-index: 90;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .services-nav::-webkit-scrollbar { display: none; }
+    .services-nav-inner {
+      display: flex;
+      gap: 0;
+      min-width: max-content;
+      padding: 0 20px;
+    }
+    .services-nav-link {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 15px 18px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #555;
+      text-decoration: none;
+      white-space: nowrap;
+      border-bottom: 3px solid transparent;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .services-nav-link:hover, .services-nav-link.active {
+      color: #2007BC;
+      border-bottom-color: #00FAB4;
+    }
+    .services-nav-link svg { width: 16px; height: 16px; flex-shrink: 0; }
+
+    /* Service Sections */
+    .service-section {
+      padding: 90px 0;
+      scroll-margin-top: 130px;
+    }
+    .service-section:nth-child(even) { background: #f6f7fb; }
+    .service-section:nth-child(odd) { background: #fff; }
+
+    .service-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+    .service-inner.reverse { direction: rtl; }
+    .service-inner.reverse > * { direction: ltr; }
+
+    /* Service Card / Visual side */
+    .service-visual { position: relative; }
+    .service-card-gradient {
+      background: linear-gradient(135deg, #2007BC 0%, #00FAB4 100%);
+      border-radius: 24px;
+      padding: 48px 40px;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+      min-height: 320px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .service-card-gradient::before {
+      content: '';
+      position: absolute;
+      top: -40px; right: -40px;
+      width: 200px; height: 200px;
+      background: rgba(255,255,255,0.07);
+      border-radius: 50%;
+    }
+    .service-card-gradient::after {
+      content: '';
+      position: absolute;
+      bottom: -60px; left: -30px;
+      width: 180px; height: 180px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 50%;
+    }
+    .service-card-gradient.alt   { background: linear-gradient(135deg, #00FAB4 0%, #2007BC 100%); }
+    .service-card-gradient.dark  { background: linear-gradient(135deg, #0A0060 0%, #2007BC 80%); }
+    .service-card-gradient.teal  { background: linear-gradient(135deg, #00B894 0%, #0A0060 100%); }
+    .service-card-gradient.warm  { background: linear-gradient(135deg, #2007BC 0%, #6C3CE1 100%); }
+    .service-card-gradient.pool  { background: linear-gradient(135deg, #00D2FF 0%, #2007BC 100%); }
+    .service-card-gradient.roof  { background: linear-gradient(135deg, #2007BC 0%, #3D5AFE 80%); }
+    .service-card-gradient.drain { background: linear-gradient(135deg, #1a1a2e 0%, #2007BC 100%); }
+    .service-card-gradient.smell { background: linear-gradient(135deg, #2D3561 0%, #2007BC 60%, #00FAB4 100%); }
+
+    .service-card-icon {
+      width: 64px; height: 64px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 16px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 20px;
+      position: relative; z-index: 1;
+    }
+    .service-card-icon svg { width: 34px; height: 34px; color: #fff; }
+    .service-card-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.9rem; font-weight: 700;
+      line-height: 1.15; margin-bottom: 12px;
+      position: relative; z-index: 1;
+      text-transform: uppercase;
+    }
+    .service-card-desc {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.95rem; opacity: 0.88;
+      line-height: 1.6;
+      position: relative; z-index: 1;
+    }
+    .service-badges {
+      display: flex; flex-wrap: wrap; gap: 8px;
+      margin-top: 24px; position: relative; z-index: 1;
+    }
+    .service-badge {
+      display: inline-flex; align-items: center; gap: 5px;
+      background: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.28);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.73rem; font-weight: 600;
+      padding: 5px 12px; border-radius: 50px;
+    }
+    .service-badge svg { width: 12px; height: 12px; }
+
+    /* Content side */
+    .service-label {
+      display: inline-block;
+      background: linear-gradient(135deg, rgba(32,7,188,0.08), rgba(0,250,180,0.1));
+      border: 1px solid rgba(32,7,188,0.15);
+      color: #2007BC;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.75rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 5px 14px; border-radius: 50px;
+      margin-bottom: 16px;
+    }
+    .service-content h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(1.7rem, 3vw, 2.4rem); font-weight: 700;
+      color: #0A0060; line-height: 1.15; margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    .service-content h2 span { color: #2007BC; }
+    .service-content p {
+      font-family: 'Open Sans', sans-serif;
+      color: #444; font-size: 0.97rem;
+      line-height: 1.78; margin-bottom: 16px;
+    }
+    .service-content p strong { color: #2007BC; font-weight: 700; }
+
+    .service-checklist {
+      list-style: none; padding: 0;
+      margin: 20px 0 28px;
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    .service-checklist li {
+      display: flex; align-items: flex-start; gap: 10px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.93rem; color: #333; line-height: 1.55;
+    }
+    .service-checklist li::before {
+      content: '';
+      width: 20px; height: 20px; min-width: 20px;
+      background: linear-gradient(135deg, #00FAB4, #2007BC);
+      border-radius: 50%;
+      display: inline-block; margin-top: 1px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='3' stroke='white'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M4.5 12.75l6 6 9-13.5'/%3E%3C/svg%3E");
+      background-size: 12px; background-position: center; background-repeat: no-repeat;
+    }
+
+    .service-infobox {
+      background: linear-gradient(135deg, rgba(32,7,188,0.04), rgba(0,250,180,0.06));
+      border-left: 4px solid #00FAB4;
+      border-radius: 0 12px 12px 0;
+      padding: 18px 22px; margin: 20px 0;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.9rem; color: #333; line-height: 1.65;
+    }
+    .service-infobox strong { color: #2007BC; }
+
+    .service-cta-inline {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: linear-gradient(135deg, #2007BC, #3D5AFE);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700; font-size: 0.92rem;
+      padding: 14px 28px; border-radius: 50px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 20px rgba(32,7,188,0.25);
+    }
+    .service-cta-inline:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(32,7,188,0.35); }
+    .service-cta-inline svg { width: 18px; height: 18px; }
+
+    .service-cta-group {
+      display: flex; gap: 12px; flex-wrap: wrap;
+      align-items: center; margin-top: 8px;
+    }
+    .service-cta-tel {
+      display: inline-flex; align-items: center; gap: 7px;
+      color: #2007BC;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700; font-size: 0.92rem;
+      text-decoration: none; transition: color 0.2s;
+    }
+    .service-cta-tel:hover { color: #00B894; }
+
+    /* Bottom CTA Banner */
+    .services-closing-banner {
+      background: linear-gradient(135deg, #2007BC 0%, #0A0060 100%);
+      padding: 80px 0; text-align: center;
+    }
+    .services-closing-banner h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: clamp(1.6rem, 3vw, 2.5rem); font-weight: 700;
+      color: #fff; text-transform: uppercase; margin-bottom: 12px;
+    }
+    .services-closing-banner h2 span { color: #00FAB4; }
+    .services-closing-banner p {
+      font-family: 'Open Sans', sans-serif;
+      color: rgba(255,255,255,0.78);
+      font-size: 1rem; margin-bottom: 32px;
+      max-width: 560px; margin-left: auto; margin-right: auto;
+    }
+    .services-trust-strip {
+      display: flex; justify-content: center;
+      gap: 40px; flex-wrap: wrap; margin-top: 36px;
+    }
+    .services-trust-item {
+      display: flex; align-items: center; gap: 10px;
+      color: rgba(255,255,255,0.9);
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.85rem; font-weight: 600;
+    }
+    .services-trust-item svg { width: 20px; height: 20px; color: #00FAB4; flex-shrink: 0; }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .service-inner { grid-template-columns: 1fr; gap: 36px; }
+      .service-inner.reverse { direction: ltr; }
+      .service-section { padding: 64px 0; }
+      .services-hero { padding: 120px 0 60px; }
+    }
+    @media (max-width: 600px) {
+      .service-card-gradient { padding: 32px 24px; min-height: 260px; }
+      .services-trust-strip { gap: 20px; }
     }
   </style>
 </head>
@@ -283,10 +395,12 @@
           <li class="nav-item">
             <a href="services.html" class="nav-link active">Nos Solutions <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg></a>
             <div class="dropdown">
-              <a href="services.html#gaz-traceur"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/></svg><div>Gaz traceur<span class="dropdown-desc">Détection précise et non destructive</span></div></a>
-              <a href="services.html#camera-thermique"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z"/><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z"/></svg><div>Caméra thermique<span class="dropdown-desc">Imagerie infrarouge haute résolution</span></div></a>
-              <a href="services.html#detection-acoustique"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"/></svg><div>Détection acoustique<span class="dropdown-desc">Écoute et localisation sonore</span></div></a>
-              <a href="services.html#canalisation"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17l-5.1-5.1a7.065 7.065 0 010-9.99m9.18 9.18l5.1 5.1a7.002 7.002 0 010 9.9M8.75 4.76l7.44 7.44"/></svg><div>Canalisation enterrée<span class="dropdown-desc">Recherche sur réseaux souterrains</span></div></a>
+              <a href="services.html#degat-des-eaux"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3"/></svg><div>Dégât des eaux<span class="dropdown-desc">Localisation rapide de la fuite</span></div></a>
+              <a href="services.html#moisissures"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126z"/></svg><div>Moisissures & humidité<span class="dropdown-desc">Diagnostic et recherche de l'origine</span></div></a>
+              <a href="services.html#surconsommation"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75"/></svg><div>Surconsommation d'eau<span class="dropdown-desc">Facture anormale ? On trouve pourquoi</span></div></a>
+              <a href="services.html#fuite-chauffage"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z"/></svg><div>Fuite chauffage<span class="dropdown-desc">Plancher chauffant, radiateurs</span></div></a>
+              <a href="services.html#fuite-piscine"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3"/></svg><div>Fuite piscine<span class="dropdown-desc">Liner, canalisations, buses</span></div></a>
+              <a href="services.html#infiltration"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75"/></svg><div>Infiltration toiture & façade<span class="dropdown-desc">Recherche de l'entrée d'eau</span></div></a>
             </div>
           </li>
           <li class="nav-item"><a href="a-propos.html" class="nav-link">Qui sommes-nous</a></li>
@@ -309,361 +423,537 @@
   </header>
 
   <!-- ===== PAGE HERO ===== -->
-  <section class="page-hero">
+  <section class="services-hero">
     <div class="container">
-      <h1>Nos Solutions</h1>
-      <p>Technologies de pointe, zéro destruction, résultat garanti. Découvrez nos six méthodes professionnelles de détection de fuites à Toulouse et en Haute-Garonne.</p>
+      <div class="services-hero-label">Nos solutions</div>
+      <h1>Votre problème d'eau,<br><span>notre spécialité</span></h1>
+      <p>Vous avez une tache au plafond, une facture qui explose, des moisissures qui reviennent ? On localise l'origine exacte du problème — sans tout casser, sans mauvaise surprise.</p>
+      <div class="services-hero-cta">
+        <a href="tel:+33756932430" class="btn-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+          07 56 93 24 30
+        </a>
+        <a href="devis.html" class="btn-outline">Devis gratuit en ligne</a>
+      </div>
     </div>
   </section>
 
-  <!-- ===== BREADCRUMB ===== -->
-  <nav class="breadcrumb" aria-label="Fil d'Ariane">
-    <div class="container">
-      <ul class="breadcrumb-list">
-        <li><a href="index.html">Accueil</a></li>
-        <li><span class="current">Nos Solutions</span></li>
-      </ul>
+  <!-- ===== STICKY QUICK NAV ===== -->
+  <nav class="services-nav" aria-label="Navigation des solutions">
+    <div class="services-nav-inner">
+      <a href="#degat-des-eaux" class="services-nav-link">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3"/></svg>
+        Dégât des eaux
+      </a>
+      <a href="#moisissures" class="services-nav-link">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126z"/></svg>
+        Moisissures & humidité
+      </a>
+      <a href="#surconsommation" class="services-nav-link">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75"/></svg>
+        Surconsommation
+      </a>
+      <a href="#fuite-chauffage" class="services-nav-link">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z"/></svg>
+        Fuite chauffage
+      </a>
+      <a href="#fuite-piscine" class="services-nav-link">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3"/></svg>
+        Fuite piscine
+      </a>
+      <a href="#infiltration" class="services-nav-link">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75"/></svg>
+        Infiltration
+      </a>
+      <a href="#mauvais-ecoulement" class="services-nav-link">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5"/></svg>
+        Mauvais écoulement
+      </a>
+      <a href="#mauvaises-odeurs" class="services-nav-link">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082"/></svg>
+        Mauvaises odeurs
+      </a>
     </div>
   </nav>
 
-  <!-- ===== QUICK NAV ===== -->
-  <div class="services-nav">
+  <!-- ===== 1. DÉGÂT DES EAUX ===== -->
+  <section class="service-section" id="degat-des-eaux">
     <div class="container">
-      <div class="services-nav-inner">
-        <a href="#gaz-traceur" class="services-nav-link">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/></svg>
-          Gaz traceur
-        </a>
-        <a href="#camera-thermique" class="services-nav-link">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z"/><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z"/></svg>
-          Caméra thermique
-        </a>
-        <a href="#detection-acoustique" class="services-nav-link">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"/></svg>
-          Détection acoustique
-        </a>
-        <a href="#canalisation" class="services-nav-link">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17l-5.1-5.1a7.065 7.065 0 010-9.99m9.18 9.18l5.1 5.1a7.002 7.002 0 010 9.9M8.75 4.76l7.44 7.44"/></svg>
-          Canalisation enterrée
-        </a>
-        <a href="#plancher-chauffant" class="services-nav-link">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.047 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z"/></svg>
-          Plancher chauffant
-        </a>
-        <a href="#piscine" class="services-nav-link">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/></svg>
-          Fuite piscine
-        </a>
-      </div>
-    </div>
-  </div>
+      <div class="service-inner fade-up">
 
-  <!-- ===== SERVICE 1 : GAZ TRACEUR ===== -->
-  <section class="service-detail" id="gaz-traceur">
-    <div class="container">
-      <div class="service-detail-inner">
-        <div class="service-detail-visual fade-up">
-          <div class="service-big-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/></svg>
+        <div class="service-visual">
+          <div class="service-card-gradient">
+            <div class="service-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3"/></svg>
+            </div>
+            <div class="service-card-title">Dégât des eaux</div>
+            <div class="service-card-desc">Tache au plafond, eau qui coule, mur humide. On localise la fuite pour stopper les dégâts. Rapport pour l'assurance.</div>
+            <div class="service-badges">
+              <span class="service-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                Non destructif
+              </span>
+              <span class="service-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                Rapport assurance
+              </span>
+              <span class="service-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                7j/7
+              </span>
+            </div>
           </div>
-          <span class="visual-badge">Technologie N°1</span>
-          <p class="visual-title">Gaz Traceur</p>
         </div>
-        <div class="service-detail-content fade-up">
-          <span class="service-anchor-label">Détection précise</span>
-          <h2>Détection par Gaz Traceur</h2>
-          <p>La technique du gaz traceur est aujourd'hui la méthode de référence pour localiser avec une précision millimétrique les fuites d'eau invisibles à l'œil nu. Chez Recherche de Fuite 31, nous utilisons un mélange inoffensif composé d'hydrogène et d'azote, totalement non toxique et ininflammable, qui est injecté sous légère pression dans votre réseau de canalisations.</p>
-          <p>Une fois introduit, ce gaz traceur suit exactement le parcours de la fuite et remonte naturellement à travers le sol, les dalles, le béton ou les revêtements pour affleurer à la surface au point précis de la fissure ou de la rupture. Nos techniciens parcourent ensuite la zone à l'aide d'un détecteur de haute sensibilité qui repère la moindre concentration gazeuse, même sous plusieurs dizaines de centimètres de matière.</p>
-          <p>Cette méthode est particulièrement efficace pour les canalisations enterrées sous carrelage, dalle de béton, parquet ou terrain extérieur. Elle permet d'éviter toute démolition préventive et de cibler l'intervention chirurgicalement, réduisant ainsi le coût des travaux de réparation. Le gaz se dissipe naturellement en quelques heures, sans résidu ni impact sur la qualité de l'eau potable. Résultat : une localisation fiable, un rapport écrit remis le jour même, et une prise en charge optimisée par votre assurance habitation.</p>
-          <ul class="benefits-list">
-            <li>
-              <span class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>
-              Précision millimétrique, même sous dalle de béton
-            </li>
-            <li>
-              <span class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>
-              Gaz 100 % inoffensif, non toxique et ininflammable
-            </li>
-            <li>
-              <span class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>
-              Aucune démolition préventive, intervention chirurgicale
-            </li>
-            <li>
-              <span class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>
-              Compatible avec tous types de canalisations (cuivre, PVC, PE)
-            </li>
-            <li>
-              <span class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>
-              Rapport détaillé fourni pour votre assurance
-            </li>
+
+        <div class="service-content">
+          <div class="service-label">Problème n°1</div>
+          <h2>Tache au plafond,<br><span>mur humide, eau qui coule</span></h2>
+          <p>Vous avez remarqué une <strong>tache brune ou jaune au plafond</strong>, un mur qui suinte, ou de l'eau qui goutte à intervalles réguliers ? Ce sont les signes classiques d'un dégât des eaux en cours. Le problème, c'est que la fuite visible n'est presque jamais là où elle prend sa source. L'eau voyage dans les dalles, les cloisons, les gaines — parfois sur plusieurs mètres — avant d'apparaître à la surface.</p>
+          <p>Appeler un plombier pour casser au hasard, c'est la garantie d'aggraver les dégâts et d'avoir une facture de remise en état qui s'envole. Notre approche est radicalement différente : on <strong>localise la fuite à la source</strong> avant toute intervention, sans démolition inutile.</p>
+          <p>Nous intervenons avec des technologies de détection professionnelles — caméra thermique infrarouge, gaz traceur inerte, corrélateur acoustique — qui nous permettent de repérer le point de fuite exact à quelques centimètres près, même derrière une cloison, sous un carrelage ou dans une dalle béton. <strong>Zéro casse inutile. 100 % de précision.</strong> Vous signalez à votre plombier l'endroit exact où ouvrir, et uniquement là.</p>
+          <div class="service-infobox">
+            <strong>Important pour votre assurance :</strong> Nous rédigeons un rapport de détection complet avec localisation précise, photos et description technique. Ce document est indispensable pour déclarer un sinistre et obtenir une prise en charge rapide par votre assureur habitation.
+          </div>
+          <ul class="service-checklist">
+            <li>Tache d'humidité au plafond ou sur un mur porteur</li>
+            <li>Eau qui coule ou dégoutte de façon intermittente</li>
+            <li>Peinture qui gonfle, cloque ou se décolle</li>
+            <li>Voisin du dessous qui signale des infiltrations</li>
+            <li>Odeur de renfermé persistante dans une pièce</li>
           </ul>
-          <a href="devis.html" class="btn btn-green">
-            Demander un devis gratuit
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-          </a>
+          <div class="service-cta-group">
+            <a href="tel:+33756932430" class="service-cta-inline">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+              Appeler maintenant
+            </a>
+            <a href="devis.html" class="service-cta-tel">Devis gratuit en ligne &rarr;</a>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ===== SERVICE 2 : CAMÉRA THERMIQUE ===== -->
-  <section class="service-detail" id="camera-thermique">
+  <!-- ===== 2. MOISISSURES ===== -->
+  <section class="service-section" id="moisissures">
     <div class="container">
-      <div class="service-detail-inner reverse">
-        <div class="service-detail-visual fade-up">
-          <div class="service-big-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z"/><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0z"/></svg>
+      <div class="service-inner reverse fade-up">
+
+        <div class="service-visual">
+          <div class="service-card-gradient alt">
+            <div class="service-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126z"/></svg>
+            </div>
+            <div class="service-card-title">Moisissures<br>& humidité</div>
+            <div class="service-card-desc">Moisissures récurrentes, odeur d'humidité, peinture qui cloque. On identifie la source : fuite cachée, condensation ou infiltration.</div>
+            <div class="service-badges">
+              <span class="service-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                Caméra thermique
+              </span>
+              <span class="service-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                Diagnostic complet
+              </span>
+              <span class="service-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                Rapport écrit
+              </span>
+            </div>
           </div>
-          <span class="visual-badge">Infrarouge HD</span>
-          <p class="visual-title">Caméra Thermique</p>
         </div>
-        <div class="service-detail-content fade-up">
-          <span class="service-anchor-label">Imagerie infrarouge</span>
-          <h2>Détection par Caméra Thermique</h2>
-          <p>La thermographie infrarouge est une technique d'investigation non destructive qui exploite les différences de température de surface pour révéler la présence d'humidité ou d'eau en fuite derrière les murs, les sols et les plafonds. Nos caméras thermiques professionnelles de dernière génération captent des variations thermiques de l'ordre de 0,01 °C, permettant de voir ce qui est totalement invisible à l'œil nu.</p>
-          <p>Lorsqu'une canalisation fuit, l'eau s'infiltre et modifie localement la température des parois. La caméra thermique restitue ces anomalies sous forme de cartographie colorée, où les zones froides (bleu) et chaudes (rouge/orange) trahissent immédiatement la présence d'humidité. Cette technique est particulièrement redoutable pour les fuites de planchers chauffants, les infiltrations de toiture, les ponts thermiques et les dégâts cachés dans les murs.</p>
-          <p>L'intervention est rapide, propre et totalement non invasive : notre technicien parcourt les surfaces à analyser avec la caméra, génère une cartographie thermique complète et identifie en temps réel les zones suspectes. Ce diagnostic visuel objectif est un outil précieux pour les assureurs, les gestionnaires de copropriété et les particuliers souhaitant documenter un sinistre ou engager des travaux ciblés sans démolir préventivement. À Toulouse et en Haute-Garonne, Recherche de Fuite 31 intervient en moins de 2 heures pour une analyse complète.</p>
-          <ul class="benefits-list">
-            <li>
-              <span class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>
-              Détection sans contact, aucun percement nécessaire
-            </li>
-            <li>
-              <span class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>
-              Cartographie thermique précise remise avec le rapport
-            </li>
-            <li>
-              <span class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>
-              Idéal pour planchers chauffants, murs et toitures
-            </li>
-            <li>
-              <span class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>
-              Résultats instantanés visibles sur écran
-            </li>
-            <li>
-              <span class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>
-              Document photo accepté par les assurances
-            </li>
+
+        <div class="service-content">
+          <div class="service-label">Problème n°2</div>
+          <h2>Moisissures qui reviennent,<br><span>humidité persistante</span></h2>
+          <p>Vous grattez, vous repeignez, vous aérez — et les <strong>moisissures reviennent</strong> quelques semaines plus tard, toujours au même endroit. Ce n'est pas un problème de ventilation. C'est le signe qu'il y a une source d'humidité active quelque part dans votre mur ou votre plafond, que vous ne voyez pas.</p>
+          <p>Les moisissures ne sont pas seulement inesthétiques : elles dégradent les matériaux de votre logement et peuvent avoir un impact sérieux sur la qualité de l'air intérieur. Mais <strong>traiter les moisissures sans traiter la cause</strong>, c'est peine perdue. On revient toujours à la case départ.</p>
+          <p>Notre rôle est de déterminer avec précision ce qui cause cette humidité excessive. Est-ce une <strong>fuite de canalisation cachée</strong> dans la cloison ? Une infiltration qui entre par la façade ou la toiture ? Un problème de condensation lié à un pont thermique ? Grâce à la caméra thermique infrarouge, nous visualisons les zones froides et humides invisibles à l'oeil nu, et nous cartographions l'étendue réelle du problème. Vous savez exactement d'où vient l'eau, et quelle solution apporter — une fois pour toutes.</p>
+          <ul class="service-checklist">
+            <li>Taches noires ou verdâtres dans les coins de pièce</li>
+            <li>Odeur de moisi ou de renfermé persistante</li>
+            <li>Peinture qui cloque, papier peint qui se décolle</li>
+            <li>Mur qui paraît toujours légèrement froid ou humide au toucher</li>
+            <li>Traitement des moisissures inefficace malgré plusieurs tentatives</li>
           </ul>
-          <a href="devis.html" class="btn btn-green">
-            Demander un devis gratuit
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-          </a>
+          <div class="service-cta-group">
+            <a href="tel:+33756932430" class="service-cta-inline">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+              Appeler maintenant
+            </a>
+            <a href="devis.html" class="service-cta-tel">Devis gratuit en ligne &rarr;</a>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ===== SERVICE 3 : DÉTECTION ACOUSTIQUE ===== -->
-  <section class="service-detail" id="detection-acoustique">
+  <!-- ===== 3. SURCONSOMMATION ===== -->
+  <section class="service-section" id="surconsommation">
     <div class="container">
-      <div class="service-detail-inner">
-        <div class="service-detail-visual fade-up">
-          <div class="service-big-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"/></svg>
+      <div class="service-inner fade-up">
+
+        <div class="service-visual">
+          <div class="service-card-gradient dark">
+            <div class="service-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75"/></svg>
+            </div>
+            <div class="service-card-title">Surconsommation<br>d'eau</div>
+            <div class="service-card-desc">Facture d'eau anormalement élevée, compteur qui tourne tout seul. On détecte la fuite invisible sur votre réseau.</div>
+            <div class="service-badges">
+              <span class="service-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                Gaz traceur
+              </span>
+              <span class="service-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                Corrélation acoustique
+              </span>
+              <span class="service-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                Localisation précise
+              </span>
+            </div>
           </div>
-          <span class="visual-badge">Écoute ultra-sensible</span>
-          <p class="visual-title">Détection Acoustique</p>
         </div>
-        <div class="service-detail-content fade-up">
-          <span class="service-anchor-label">Localisation sonore</span>
-          <h2>Détection Acoustique de Fuites</h2>
-          <p>La détection acoustique de fuites repose sur un principe physique simple mais redoutablement efficace : toute fuite dans une canalisation sous pression génère des vibrations sonores caractéristiques qui se propagent à travers les parois et le sol environnant. Nos techniciens utilisent des corrélateurs acoustiques et des géophones de haute précision pour capter, amplifier et analyser ces sons imperceptibles à l'oreille humaine.</p>
-          <p>La technique de corrélation acoustique est la plus avancée : deux capteurs sont posés à des points d'accès du réseau (robinets, vannes, compteur), et un logiciel de traitement du signal calcule mathématiquement la différence de temps de propagation du bruit de fuite entre les deux capteurs. Ce calcul détermine avec une précision de quelques centimètres l'emplacement exact de la fuite sur la conduite, même si elle est enfouie à plusieurs mètres de profondeur sous une chaussée ou un jardin.</p>
-          <p>Cette méthode est particulièrement indiquée lorsque le réseau est long, enterré sous la voie publique ou dans des zones difficiles d'accès. Elle peut être combinée avec le gaz traceur pour confirmer et affiner la localisation. Recherche de Fuite 31 dispose des équipements les plus récents du marché et intervient sur tous types de réseaux à Toulouse, Blagnac, Colomiers, Muret et l'ensemble du département 31.</p>
-          <ul class="benefits-list">
-            <li>
-              <span class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>
-              Corrélateur acoustique dernière génération
-            </li>
-            <li>
-              <span class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>
-              Localisation à quelques centimètres près
-            </li>
-            <li>
-              <span class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>
-              Efficace sur réseaux longs et souterrains profonds
-            </li>
-            <li>
-              <span class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>
-              Combinable avec le gaz traceur pour fiabilité maximale
-            </li>
-            <li>
-              <span class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>
-              Aucune interruption de service nécessaire
-            </li>
+
+        <div class="service-content">
+          <div class="service-label">Problème n°3</div>
+          <h2>Facture d'eau qui explose,<br><span>compteur qui tourne tout seul</span></h2>
+          <p>Vous venez de recevoir votre <strong>facture d'eau et elle a doublé, voire triplé</strong>, sans raison apparente ? Ou vous avez fermé toutes les robinetteries et regardé votre compteur : il tourne encore ? C'est la preuve qu'il y a une <strong>fuite active sur votre réseau</strong>, quelque part entre le compteur et vos équipements.</p>
+          <p>Ces fuites dites "invisibles" sont particulièrement sournoises : elles se produisent dans les canalisations enterrées, sous la dalle, dans les murs porteurs ou entre les étages. Aucune trace en surface, aucun bruit audible — juste cette facture qui grimpe, mois après mois. Et pendant ce temps, l'eau s'infiltre dans le sol ou les structures, provoquant des dégâts qui ne deviennent visibles que bien plus tard.</p>
+          <p>Notre équipe intervient avec des équipements de détection acoustique haute sensibilité et du <strong>gaz traceur</strong> (mélange inerte, sans aucun danger) pour localiser la fuite à l'endroit exact où elle se produit. Ce n'est qu'une fois la localisation confirmée que le plombier intervient, au centimètre près. Résultat : <strong>réparation minimale, économies immédiates</strong>, et fin des surprises sur votre facture.</p>
+          <div class="service-infobox">
+            <strong>Le saviez-vous ?</strong> En France, si une fuite est détectée et réparée dans les règles, vous pouvez demander un remboursement partiel de votre surconsommation auprès de votre fournisseur d'eau. Notre rapport de détection constitue la pièce justificative nécessaire pour cette démarche.
+          </div>
+          <ul class="service-checklist">
+            <li>Facture d'eau anormalement élevée sur un ou plusieurs mois</li>
+            <li>Index du compteur qui progresse sans utilisation détectée</li>
+            <li>Compteur d'eau qui tourne la nuit ou en votre absence</li>
+            <li>Zones humides inexpliquées dans le jardin ou la cour</li>
+            <li>Légère baisse de pression sur certains points d'eau</li>
           </ul>
-          <a href="devis.html" class="btn btn-green">
-            Demander un devis gratuit
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-          </a>
+          <div class="service-cta-group">
+            <a href="tel:+33756932430" class="service-cta-inline">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+              Appeler maintenant
+            </a>
+            <a href="devis.html" class="service-cta-tel">Devis gratuit en ligne &rarr;</a>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ===== SERVICE 4 : CANALISATION ENTERRÉE ===== -->
-  <section class="service-detail" id="canalisation">
+  <!-- ===== 4. FUITE CHAUFFAGE ===== -->
+  <section class="service-section" id="fuite-chauffage">
     <div class="container">
-      <div class="service-detail-inner reverse">
-        <div class="service-detail-visual fade-up">
-          <div class="service-big-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17l-5.1-5.1a7.065 7.065 0 010-9.99m9.18 9.18l5.1 5.1a7.002 7.002 0 010 9.9M8.75 4.76l7.44 7.44"/></svg>
+      <div class="service-inner reverse fade-up">
+
+        <div class="service-visual">
+          <div class="service-card-gradient warm">
+            <div class="service-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z"/></svg>
+            </div>
+            <div class="service-card-title">Fuite<br>chauffage</div>
+            <div class="service-card-desc">Perte de pression chaudière, plancher chauffant qui fuit, radiateur qui goutte. Intervention sur tout circuit de chauffage.</div>
+            <div class="service-badges">
+              <span class="service-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                Thermique infrarouge
+              </span>
+              <span class="service-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                Sans vider le circuit
+              </span>
+              <span class="service-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                Sol intact
+              </span>
+            </div>
           </div>
-          <span class="visual-badge">Réseaux souterrains</span>
-          <p class="visual-title">Canalisation Enterrée</p>
         </div>
-        <div class="service-detail-content fade-up">
-          <span class="service-anchor-label">Recherche souterraine</span>
-          <h2>Fuite sur Canalisation Enterrée</h2>
-          <p>Les fuites sur canalisations enterrées sont parmi les plus difficiles à détecter et les plus coûteuses si elles ne sont pas traitées rapidement. Une canalisation souterraine qui fuit peut rester invisible pendant des mois, voire des années : l'eau s'infiltre dans le sol, fragilise les fondations, détériore les chaussées et fait exploser la facture d'eau. Chez Recherche de Fuite 31, nous disposons de toute la panoplie technique pour traquer ces fuites silencieuses.</p>
-          <p>Notre approche combine plusieurs technologies complémentaires. La caméra d'inspection vidéo endoscopique nous permet d'explorer visuellement l'intérieur des conduites pour détecter fissures, joints défaillants, déformations ou obstructions. Le géoradar (GPR) nous aide à cartographier précisément le tracé des réseaux enterrés sans fouille préalable, tandis que la détection acoustique et le gaz traceur localisent le point exact de la fuite dans la canalisation.</p>
-          <p>Que votre canalisation soit sous une allée, un parking, un jardin ou sous la voie publique, notre équipe intervient rapidement en coordination avec les concessionnaires de réseaux si nécessaire. Nous établissons un plan de localisation précis, un rapport photographique complet et un compte-rendu d'intervention que vous pourrez transmettre directement à votre assurance pour déclencher la prise en charge des travaux. Interventions sur Toulouse intramuros et toute la Haute-Garonne, 7 jours sur 7.</p>
-          <ul class="benefits-list">
-            <li>
-              <span class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>
-              Caméra endoscopique + géoradar + acoustique
-            </li>
-            <li>
-              <span class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>
-              Cartographie précise du réseau enterré
-            </li>
-            <li>
-              <span class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>
-              Intervention sur tous types de terrain et revêtements
-            </li>
-            <li>
-              <span class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>
-              Plan de localisation fourni pour les travaux de réparation
-            </li>
-            <li>
-              <span class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>
-              Coordination possible avec concessionnaires de réseaux
-            </li>
+
+        <div class="service-content">
+          <div class="service-label">Problème n°4</div>
+          <h2>Pression chaudière qui chute,<br><span>plancher chauffant, radiateurs</span></h2>
+          <p>Votre <strong>chaudière perd régulièrement en pression</strong> et vous êtes obligé de la regonfler à intervalles de plus en plus fréquents ? Votre plancher chauffant présente des zones froides inexpliquées, ou vous entendez un léger bruit de circulation d'eau là où il ne devrait pas y en avoir ? Ces symptômes indiquent une fuite sur votre circuit de chauffage central ou votre réseau de sol chauffant.</p>
+          <p>La difficulté avec les fuites de chauffage, c'est que l'eau circule à pression dans des tuyaux encastrés dans la dalle, dans les murs, ou derrière des habillages. Une fuite même minime peut imbiber la structure sur une surface importante avant d'être détectée. Plus vous attendez, plus les dégâts potentiels s'accumulent et plus la réparation sera coûteuse.</p>
+          <p>Grâce à la <strong>caméra thermique infrarouge</strong>, nous visualisons directement les circuits de chauffage actifs à travers les revêtements de sol. La différence de température entre un tuyau qui fuit et la dalle environnante est parfaitement lisible sur notre équipement. Nous localisons le point de fuite précis <strong>sans toucher au carrelage ni à la chape</strong>, puis vous indiquons exactement où le plombier doit intervenir. Le reste de votre sol reste intact.</p>
+          <ul class="service-checklist">
+            <li>Pression chaudière qui baisse régulièrement sans raison</li>
+            <li>Zones de sol plus froides que d'autres avec plancher chauffant</li>
+            <li>Radiateur qui goutte ou présente des traces de calcaire sèches</li>
+            <li>Bruits de gargouillis dans les canalisations de chauffage</li>
+            <li>Humidité au sol, carrelage décollé ou qui grince</li>
           </ul>
-          <a href="devis.html" class="btn btn-green">
-            Demander un devis gratuit
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-          </a>
+          <div class="service-cta-group">
+            <a href="tel:+33756932430" class="service-cta-inline">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+              Appeler maintenant
+            </a>
+            <a href="devis.html" class="service-cta-tel">Devis gratuit en ligne &rarr;</a>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ===== SERVICE 5 : PLANCHER CHAUFFANT ===== -->
-  <section class="service-detail" id="plancher-chauffant">
+  <!-- ===== 5. FUITE PISCINE ===== -->
+  <section class="service-section" id="fuite-piscine">
     <div class="container">
-      <div class="service-detail-inner">
-        <div class="service-detail-visual fade-up">
-          <div class="service-big-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.047 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z"/></svg>
+      <div class="service-inner fade-up">
+
+        <div class="service-visual">
+          <div class="service-card-gradient pool">
+            <div class="service-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/></svg>
+            </div>
+            <div class="service-card-title">Fuite<br>piscine</div>
+            <div class="service-card-desc">Niveau d'eau qui baisse, liner, canalisations, buses, skimmer. Détection sans vider le bassin.</div>
+            <div class="service-badges">
+              <span class="service-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                Sans vidange
+              </span>
+              <span class="service-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                Liner &amp; canalisations
+              </span>
+              <span class="service-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                Rapport précis
+              </span>
+            </div>
           </div>
-          <span class="visual-badge">Spécialité chauffage</span>
-          <p class="visual-title">Plancher Chauffant</p>
         </div>
-        <div class="service-detail-content fade-up">
-          <span class="service-anchor-label">Circuits hydrothermiques</span>
-          <h2>Fuite sur Plancher Chauffant</h2>
-          <p>Le plancher chauffant hydraulique est une installation de confort thermique particulièrement appréciée dans les maisons individuelles et les appartements toulousains. Mais lorsqu'une micro-fissure apparaît sur l'un des serpentins encastrés dans la dalle, les conséquences peuvent être désastreuses : humidité remontante, décollement du carrelage, apparition de moisissures, chute du rendement thermique et dégât des eaux potentiel pour les voisins du dessous.</p>
-          <p>La particularité des fuites sur plancher chauffant est leur extrême discrétion : les serpentins noyés dans la chape à quelques centimètres de profondeur fuient souvent à très basse pression, rendant la localisation impossible par les méthodes classiques. C'est là que nos deux technologies de prédilection entrent en jeu : la caméra thermique et le gaz traceur, utilisés conjointement pour une fiabilité maximale.</p>
-          <p>La caméra thermique est mise en œuvre lorsque le circuit est en fonctionnement : les différences de température de surface de la dalle révèlent immédiatement la zone froide où l'eau s'échappe. Le gaz traceur prend le relais pour affiner la localisation à quelques centimètres, permettant à votre plombier de n'ouvrir la dalle qu'à l'endroit exact de la fissure. Aucune démolition inutile, aucune surprise. Recherche de Fuite 31 est spécialisé dans ce type d'intervention et réalise plusieurs dizaines de diagnostics de planchers chauffants chaque année à Toulouse.</p>
-          <ul class="benefits-list">
-            <li>
-              <span class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>
-              Double diagnostic : thermique + gaz traceur
-            </li>
-            <li>
-              <span class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>
-              Localisation sans démolition préalable de la dalle
-            </li>
-            <li>
-              <span class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>
-              Compatible tous types de revêtements (carrelage, parquet, résine)
-            </li>
-            <li>
-              <span class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>
-              Intervention prise en charge par assurance habitation
-            </li>
-            <li>
-              <span class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>
-              Rapport photographique et plan fournis le jour même
-            </li>
+
+        <div class="service-content">
+          <div class="service-label">Problème n°5</div>
+          <h2>Niveau d'eau qui baisse,<br><span>liner, buses, skimmer</span></h2>
+          <p>Votre piscine <strong>perd du niveau d'eau</strong> régulièrement, même en dehors des périodes de forte chaleur ? Une perte de 1 à 2 cm par semaine peut être normale par évaporation, mais au-delà, il y a très probablement une fuite quelque part. Le problème, c'est qu'une fuite de piscine peut avoir une dizaine de causes différentes : fissure dans le liner, joint de skimmer défaillant, buse de refoulement qui fuit, canalisation d'aspiration ou de refoulement percée, ou encore un problème au niveau du local technique.</p>
+          <p>Vider la piscine pour inspecter visuellement est souvent la réaction instinctive — mais c'est une erreur. Cela ne permet pas de tester les canalisations en charge, et peut même aggraver certaines fissures. Notre méthode est beaucoup plus efficace : nous effectuons des <strong>tests de pression sur les circuits</strong>, une inspection subaquatique avec détecteur de fluorescéine, et une analyse acoustique des canalisations enterrées. Dans la grande majorité des cas, nous localisons la fuite <strong>sans vider le bassin</strong>.</p>
+          <p>Un rapport complet vous est remis en fin d'intervention avec la localisation du point de fuite, les photos de l'inspection et nos recommandations de réparation. Vous savez exactement ce qui doit être fait, par qui, et pour quel résultat attendu.</p>
+          <ul class="service-checklist">
+            <li>Perte de niveau d'eau supérieure à 2-3 cm par semaine</li>
+            <li>Sol autour de la piscine anormalement humide ou détrempé</li>
+            <li>Liner présentant des plis inhabituels ou des zones soulevées</li>
+            <li>Consommation de produits chimiques anormalement élevée</li>
+            <li>Pression du circuit de filtration instable ou en baisse</li>
           </ul>
-          <a href="devis.html" class="btn btn-green">
-            Demander un devis gratuit
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-          </a>
+          <div class="service-cta-group">
+            <a href="tel:+33756932430" class="service-cta-inline">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+              Appeler maintenant
+            </a>
+            <a href="devis.html" class="service-cta-tel">Devis gratuit en ligne &rarr;</a>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ===== SERVICE 6 : PISCINE ===== -->
-  <section class="service-detail" id="piscine">
+  <!-- ===== 6. INFILTRATION ===== -->
+  <section class="service-section" id="infiltration">
     <div class="container">
-      <div class="service-detail-inner reverse">
-        <div class="service-detail-visual fade-up">
-          <div class="service-big-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/></svg>
+      <div class="service-inner reverse fade-up">
+
+        <div class="service-visual">
+          <div class="service-card-gradient roof">
+            <div class="service-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21"/></svg>
+            </div>
+            <div class="service-card-title">Infiltration<br>toiture & façade</div>
+            <div class="service-card-desc">L'eau rentre par le toit ou les murs extérieurs. Identification du point d'entrée exact.</div>
+            <div class="service-badges">
+              <span class="service-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                Thermique toiture
+              </span>
+              <span class="service-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                Analyse façade
+              </span>
+              <span class="service-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                Rapport assurance
+              </span>
+            </div>
           </div>
-          <span class="visual-badge">Piscines &amp; bassins</span>
-          <p class="visual-title">Fuite Piscine</p>
         </div>
-        <div class="service-detail-content fade-up">
-          <span class="service-anchor-label">Bassins &amp; piscines</span>
-          <h2>Recherche de Fuite sur Piscine</h2>
-          <p>Une piscine qui perd de l'eau est souvent difficile à distinguer d'une simple évaporation, surtout sous le soleil toulousain. Pourtant, une perte supérieure à 2 cm d'eau par semaine est généralement le signe d'une véritable fuite qu'il convient de localiser et de traiter sans tarder. Une fuite non détectée peut compromettre la stabilité des parois du bassin, déstabiliser les terrasses et plages périphériques, et induire des surcoûts de traitement d'eau considérables.</p>
-          <p>Chez Recherche de Fuite 31, nous réalisons un protocole de diagnostic complet spécifique aux piscines. Dans un premier temps, nous procédons au test de fuites statiques (test de la bouteille ou du seau) pour confirmer la présence d'une fuite et la distinguer de l'évaporation naturelle. Nous examinons ensuite méthodiquement l'ensemble des points vulnérables : skimmers, buses de refoulement, projecteurs immergés, canalisations de filtration, entrées de fond, joints de structure et structure elle-même.</p>
-          <p>Pour les fuites sur les canalisations enterrées reliées à la piscine, nous déployons nos techniques habituelles de gaz traceur et de détection acoustique. Pour les infiltrations dans la structure béton ou le liner, nous utilisons la caméra subaquatique et les colorants de traçage qui visualisent les points d'entrée d'eau. En cas de fuite sur liner ou membrane, nous pouvons assurer une réparation immédiate. Notre connaissance des piscines de la région toulousaine (piscines béton, liner, coque polyester) garantit un diagnostic fiable et une intervention rapide.</p>
-          <ul class="benefits-list">
-            <li>
-              <span class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>
-              Diagnostic complet : structure, liner, canalisations, skimmers
-            </li>
-            <li>
-              <span class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>
-              Caméra subaquatique + colorants traceurs
-            </li>
-            <li>
-              <span class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>
-              Compatible piscines béton, liner et coque polyester
-            </li>
-            <li>
-              <span class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>
-              Réparation liner possible lors de l'intervention
-            </li>
-            <li>
-              <span class="benefit-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>
-              Intervention 7j/7 en Haute-Garonne
-            </li>
+
+        <div class="service-content">
+          <div class="service-label">Problème n°6</div>
+          <h2>L'eau rentre par le toit<br><span>ou les murs extérieurs</span></h2>
+          <p>Après une forte pluie, vous constatez une <strong>tache d'humidité au plafond du dernier étage</strong>, ou un mur intérieur adjacent à la façade qui présente des traces de ruissellement. L'eau ne vient pas d'une canalisation : elle entre de l'extérieur, par la toiture, par un joint de fenêtre dégradé, par une fissure dans le ravalement, ou par un relevé d'étanchéité défaillant.</p>
+          <p>Le problème des infiltrations par l'enveloppe du bâtiment, c'est que le point d'entrée visible à l'intérieur n'est presque jamais le point d'entrée réel. L'eau pénètre à un endroit, chemine dans les matériaux de construction, et ressort à un autre. On peut refaire une toiture entière sans résoudre le problème si le point d'entrée est en fait un joint de châssis ou un solin raté.</p>
+          <p>Notre intervention combine <strong>inspection visuelle méthodique</strong>, caméra thermique pour cartographier les zones humides dans la structure, et dans certains cas tests d'étanchéité à l'eau. Nous identifions le ou les points d'entrée précis, rédigeons un rapport technique complet utilisable pour votre assurance et vos artisans, et vous orientons vers des travaux de réparation ciblés. Plus de devis "au cas où", plus de travaux inutiles : seulement ce qui est nécessaire, là où c'est nécessaire.</p>
+          <ul class="service-checklist">
+            <li>Tache ou suintement au plafond qui apparaît après la pluie</li>
+            <li>Mur extérieur ou pignon présentant des traces d'humidité intérieure</li>
+            <li>Infiltration visible au niveau des fenêtres de toit ou velux</li>
+            <li>Mousse ou végétation sur la toiture, tuiles déplacées</li>
+            <li>Humidité persistante dans les combles ou sous les rampants</li>
           </ul>
-          <a href="devis.html" class="btn btn-green">
-            Demander un devis gratuit
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-          </a>
+          <div class="service-cta-group">
+            <a href="tel:+33756932430" class="service-cta-inline">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+              Appeler maintenant
+            </a>
+            <a href="devis.html" class="service-cta-tel">Devis gratuit en ligne &rarr;</a>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ===== CTA SECTION ===== -->
-  <section class="services-cta-section">
+  <!-- ===== 7. MAUVAIS ÉCOULEMENT ===== -->
+  <section class="service-section" id="mauvais-ecoulement">
     <div class="container">
-      <div class="section-label">Prêt à intervenir</div>
-      <h2>Une fuite détectée en moins de 2h</h2>
-      <p>Contactez-nous dès maintenant pour une intervention rapide à Toulouse et dans toute la Haute-Garonne. Devis gratuit, rapport complet, prise en charge assurance.</p>
-      <a href="tel:+33756932430" class="services-cta-phone">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
-        07.56.93.24.30
-      </a>
-      <div class="cta-btns">
-        <a href="devis.html" class="btn btn-green btn-lg">
-          Devis gratuit en ligne
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+      <div class="service-inner fade-up">
+
+        <div class="service-visual">
+          <div class="service-card-gradient drain">
+            <div class="service-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5"/></svg>
+            </div>
+            <div class="service-card-title">Mauvais<br>écoulement</div>
+            <div class="service-card-desc">Canalisations bouchées, eau qui stagne, évacuation lente. Inspection vidéo et diagnostic.</div>
+            <div class="service-badges">
+              <span class="service-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                Caméra endoscopique
+              </span>
+              <span class="service-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                Inspection complète
+              </span>
+              <span class="service-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                Diagnostic écrit
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-content">
+          <div class="service-label">Problème n°7</div>
+          <h2>Eau qui stagne, évacuation lente,<br><span>canalisation bouchée</span></h2>
+          <p>L'eau met de plus en plus de temps à partir dans votre évier, votre douche ou votre baignoire. Les WC refluent parfois, ou vous entendez des gargouillis dans les tuyaux lorsque vous tirez la chasse. Ces symptômes indiquent un <strong>problème sur votre réseau d'évacuation</strong> : bouchon partiel ou total, dépôt de tartre ou de graisse accumulé, racines d'arbres infiltrées dans les joints, voire effondrement partiel d'une canalisation.</p>
+          <p>Un débouchage simple à la ventouse ou à la sonde peut résoudre un bouchon ponctuel — mais si le problème se répète, ou si plusieurs points d'évacuation sont touchés en même temps, il faut aller plus loin. Déboucher sans diagnostiquer, c'est traiter le symptôme sans soigner la cause. Deux mois plus tard, le problème revient, parfois aggravé, avec un risque de refoulement dans votre logement.</p>
+          <p>Nous utilisons une <strong>caméra d'inspection endoscopique</strong> que nous introduisons dans vos canalisations pour voir exactement ce qui s'y passe : état des parois, présence de dépôts, localisation précise d'un bouchon récalcitrant, racines envahissantes, joint décollé ou tuyau fissuré. Le diagnostic vidéo est enregistré et vous est remis. Vous savez avec précision ce que votre réseau d'assainissement a dans le ventre, et ce qui est nécessaire pour régler le problème durablement.</p>
+          <ul class="service-checklist">
+            <li>Évacuation lente sur un ou plusieurs points d'eau</li>
+            <li>Reflux ou remontées dans les WC ou la douche</li>
+            <li>Gargouillis dans les canalisations après utilisation</li>
+            <li>Eau qui stagne dans l'évier ou le receveur de douche</li>
+            <li>Problèmes récurrents malgré des débouchages réguliers</li>
+          </ul>
+          <div class="service-cta-group">
+            <a href="tel:+33756932430" class="service-cta-inline">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+              Appeler maintenant
+            </a>
+            <a href="devis.html" class="service-cta-tel">Devis gratuit en ligne &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 8. MAUVAISES ODEURS ===== -->
+  <section class="service-section" id="mauvaises-odeurs">
+    <div class="container">
+      <div class="service-inner reverse fade-up">
+
+        <div class="service-visual">
+          <div class="service-card-gradient smell">
+            <div class="service-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/></svg>
+            </div>
+            <div class="service-card-title">Mauvaises<br>odeurs</div>
+            <div class="service-card-desc">Odeurs d'égout, remontées, problèmes de siphon. Diagnostic et solution.</div>
+            <div class="service-badges">
+              <span class="service-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                Inspection réseau
+              </span>
+              <span class="service-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                Test à la fumée
+              </span>
+              <span class="service-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                Solution durable
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-content">
+          <div class="service-label">Problème n°8</div>
+          <h2>Odeurs d'égout, remontées,<br><span>siphon défaillant</span></h2>
+          <p>Des <strong>odeurs d'égout ou de soufre</strong> se dégagent par intermittence dans votre cuisine, votre salle de bain ou vos toilettes, sans cause apparente. Parfois présentes le matin, parfois après l'utilisation de certains appareils, elles disparaissent puis reviennent. Ce type d'odeur n'est jamais anodin : il signale presque toujours un problème sur votre réseau d'assainissement, et dans certains cas peut indiquer la présence de gaz dangereux dans les canalisations.</p>
+          <p>Les causes les plus fréquentes sont un <strong>siphon asséché</strong> qui ne remplit plus son rôle de barrière anti-odeur, un joint ou raccord défaillant quelque part dans le réseau intérieur, une ventilation primaire bouchée qui provoque des dépressurisations dans le circuit d'évacuation, ou encore une canalisation fissurée qui laisse fuir des gaz du réseau public vers l'intérieur du bâtiment.</p>
+          <p>Nous effectuons un <strong>diagnostic complet</strong> : inspection vidéo des canalisations, test à la fumée pour localiser les entrées d'air parasites et les fuites de gaz dans le réseau, vérification des siphons et garde d'eau, contrôle de la ventilation primaire et secondaire. Nous identifions l'origine précise des odeurs et vous proposons une solution adaptée et durable. Vous retrouvez un air intérieur sain, sans masquer le problème.</p>
+          <div class="service-infobox">
+            <strong>Attention :</strong> Des odeurs d'oeuf pourri ou de soufre peuvent indiquer la présence de gaz toxiques dans le réseau. Ne cherchez pas à identifier la source vous-même. Appelez-nous, nous avons les équipements pour le faire en toute sécurité.
+          </div>
+          <ul class="service-checklist">
+            <li>Odeur de soufre ou d'égout dans les pièces d'eau</li>
+            <li>Mauvaises odeurs qui apparaissent de façon intermittente</li>
+            <li>Gargouillis dans les canalisations associés aux odeurs</li>
+            <li>Odeur plus prononcée après de fortes pluies ou par temps humide</li>
+            <li>Odeur présente même en l'absence d'utilisation des équipements</li>
+          </ul>
+          <div class="service-cta-group">
+            <a href="tel:+33756932430" class="service-cta-inline">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+              Appeler maintenant
+            </a>
+            <a href="devis.html" class="service-cta-tel">Devis gratuit en ligne &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CLOSING CTA BANNER ===== -->
+  <section class="services-closing-banner">
+    <div class="container">
+      <h2>Votre problème n'est pas dans la liste ?<br><span>Appelez-nous quand même.</span></h2>
+      <p>Chaque situation est unique. Décrivez-nous ce que vous observez et on vous dit si et comment on peut vous aider. Devis gratuit, sans engagement.</p>
+      <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-bottom:10px;">
+        <a href="tel:+33756932430" class="btn-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+          07 56 93 24 30
         </a>
-        <a href="contact.html" class="btn btn-outline btn-lg">
-          Nous contacter
-        </a>
+        <a href="devis.html" class="btn-outline">Devis en ligne gratuit</a>
+      </div>
+      <div class="services-trust-strip">
+        <div class="services-trust-item">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          Intervention en moins de 2h
+        </div>
+        <div class="services-trust-item">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+          100% non destructif
+        </div>
+        <div class="services-trust-item">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/></svg>
+          4.8/5 — 327 avis clients
+        </div>
+        <div class="services-trust-item">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg>
+          Rapport pour l'assurance
+        </div>
       </div>
     </div>
   </section>
@@ -675,7 +965,7 @@
         <div class="footer-grid">
           <div class="footer-brand">
             <a href="index.html" class="logo">
-              <img src="images/logo.png" alt="Recherche de Fuite 31 - À chaque fuite, sa solution" class="logo-img">
+              <img src="images/logo.png" alt="Recherche de Fuite 31" class="logo-img">
             </a>
             <p class="footer-desc">Spécialiste de la recherche et détection de fuites d'eau à Toulouse et en Haute-Garonne depuis plus de 10 ans.</p>
             <div class="footer-social">
@@ -687,12 +977,14 @@
           <div>
             <h4>Nos solutions</h4>
             <ul class="footer-links">
-              <li><a href="services.html#gaz-traceur">Gaz traceur</a></li>
-              <li><a href="services.html#camera-thermique">Caméra thermique</a></li>
-              <li><a href="services.html#detection-acoustique">Détection acoustique</a></li>
-              <li><a href="services.html#canalisation">Canalisation enterrée</a></li>
-              <li><a href="services.html#plancher-chauffant">Plancher chauffant</a></li>
-              <li><a href="services.html#piscine">Fuite piscine</a></li>
+              <li><a href="services.html#degat-des-eaux">Dégât des eaux</a></li>
+              <li><a href="services.html#moisissures">Moisissures & humidité</a></li>
+              <li><a href="services.html#surconsommation">Surconsommation d'eau</a></li>
+              <li><a href="services.html#fuite-chauffage">Fuite chauffage</a></li>
+              <li><a href="services.html#fuite-piscine">Fuite piscine</a></li>
+              <li><a href="services.html#infiltration">Infiltration toiture</a></li>
+              <li><a href="services.html#mauvais-ecoulement">Mauvais écoulement</a></li>
+              <li><a href="services.html#mauvaises-odeurs">Mauvaises odeurs</a></li>
             </ul>
           </div>
           <div>
