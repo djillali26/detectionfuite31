@@ -1,0 +1,17 @@
+{
+  "name": "Recherche de Fuite 31",
+  "short_name": "RdF31",
+  "description": "Expert en recherche et détection de fuites d'eau à Toulouse et Haute-Garonne",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A1628",
+  "theme_color": "#0066CC",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💧</text></svg>",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
